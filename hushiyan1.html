@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>胡氏宴酒</title>
+  <style>
+    /* 基本样式 */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    /* 头部 */
+    .header {
+      background-color: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      position: relative;
+      border-bottom: 5px solid gold;
+    }
+    .header h1 {
+      font-size: 45px;
+      font-family: 'Serif', serif;
+    }
+    .header p {
+      font-size: 20px;
+    }
+    /* 图片插入右侧 */
+    .header img {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 150px; /* 调整大小 */
+      height: auto;
+    }
+    /* 导航栏 */
+    .nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 15px;
+      font-size: 18px;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 30px;
+    }
+    .nav a:hover {
+      color: gold;
+    }
+    /* 产品展示区 */
+    .products {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px;
+      flex-wrap: wrap;
+    }
+    .product {
+      background-color: white;
+      padding: 25px;
+      width: 30%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      border: 2px solid #d32f2f;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product h3 {
+      font-size: 26px;
+      color: #d32f2f;
+      margin: 15px 0;
+    }
+    .product p {
+      font-size: 18px;
+      color: #555;
+    }
+    .product a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #d32f2f;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .product a:hover {
+      background-color: #9e1b1b;
+    }
+    /* 限时抢购区 */
+    .limited-time {
+      background-color: #ff5722;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+    .limited-time p {
+      font-size: 20px;
+    }
+    .countdown {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    /* 客户评价区 */
+    .reviews {
+      background-color: #f9f9f9;
+      padding: 30px;
+      text-align: center;
+    }
+    .reviews h2 {
+      font-size: 30px;
+      color: #d32f2f;
+    }
+    .reviews p {
+      font-size: 18px;
+      color: #555;
+    }
+    .reviews .review {
+      margin: 10px;
+      background-color: #fff;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    /* 促销信息 */
+    .promo {
+      background-color: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .promo h3 {
+      font-size: 24px;
+    }
+    /* 底部 */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>胡氏宴酒</h1>
+    <p>传承千年，尽享盛宴</p>
+    <!-- Logo 插入 -->
+    <img src="file:///C:/Users/DVMTNH/Desktop/images/新logo.png" alt="胡氏宴酒 Logo" />
+  </div>
+
+  <!-- 导航栏 -->
+  <div class="nav">
+    <a href="#">首页</a>
+    <a href="#">胡氏人家系列白酒</a>
+    <a href="#">胡氏宴系列白酒</a>
+    <a href="#">文化大宗系列酒</a>
+    <a href="#">品牌故事</a>
+    <a href="#">促销活动</a>
+    <a href="#">FAQ</a>
+  </div>
+
+  <!-- 限时抢购 -->
+  <div class="limited-time">
+    <p>限时抢购！<span class="countdown">02:30:45</span></p>
+    <p>不要错过这次超值优惠！</p>
+  </div>
+
+  <!-- 产品展示 -->
+  <div class="products">
+    <div class="product">
+      <img src="file:///C:/Users/DVMTNH/Desktop/images/4be3d257e0158462e7b4ba925c36a4a.jpg" alt="胡氏宴酒52度">
+      <h3>胡氏宴酒52度</h3>
+      <p>价格：198元</p>
+      <a href="https://item.taobao.com/item.htm?id=xxxxxxx" target="_blank">立即购买</a>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/DVMTNH/Desktop/images/8aa6a4d247522e6ea44fc31e7bd96cd.jpg" alt="胡氏宴酒礼盒">
+      <h3>胡氏宴酒礼盒</h3>
+      <p>价格：398元</p>
+      <a href="https://item.taobao.com/item.htm?id=xxxxxxx" target="_blank">立即购买</a>
+    </div>
+    <div class="product">
+      <img src="file:///C:/Users/DVMTNH/Desktop/images/微信图片_20250117184718.png" alt="胡氏宴酒200ml">
+      <h3>胡氏宴酒200ml</h3>
+      <p>价格：99元</p>
+      <a href="https://item.taobao.com/item.htm?id=xxxxxxx" target="_blank">立即购买</a>
+    </div>
+  </div>
+
+  <!-- 客户评价区 -->
+  <div class="reviews">
+    <h2>客户评价</h2>
+    <div class="review">
+      <p><strong>用户A:</strong> 这款酒口感真好，非常适合朋友聚会，值得推荐！</p>
+    </div>
+    <div class="review">
+      <p><strong>用户B:</strong> 送礼自饮都非常合适，包装高端大气，喜欢！</p>
+    </div>
+  </div>
+
+  <!-- 促销区域 -->
+  <div class="promo">
+    <h3>节日促销：每逢过节八九折优惠</h3>
+  </div>
+
+  <!-- 优惠区图片 -->
+  <div class="promo-image">
+    <img src="file:///C:/Users/DVMTNH/Desktop/images/优惠区图片.jpg" alt="优惠区图片" style="width: 100%; height: auto; display: block; margin: 0 auto;"/>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>联系方式：0563-8350037 | 邵小姐：18956368596</p>
+    <p>社交媒体：<a href="https://weibo.com/u/5876771418" target="_blank">微博</a></p>
+    <p>&copy; 2024 胡氏宴酒 版权所有</p>
+  </div>
+
+</body>
+</html>
